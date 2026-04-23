@@ -48,7 +48,20 @@ public:
         {
             if (nim == current->noMhs)
             {
-                cout << "\n "
+                cout << "\nDuplikasikan noMhs tidak diijinkan\n";
+                return;
             }
+            previous = current;
+            current = current->next;
+        }
+
+        nodeBaru->next = current;
+        previous->next = nodeBaru;
+    }
+
+    bool listEmpty()
+    {
+        return (START == NULL);
+    }
 
 
