@@ -41,4 +41,10 @@ public:
             return;
         }
 
+        node *previous = START;
+        node *current = START;
+
+        while (current != NULL && nim > current->noMhs)
+        {
+
 
